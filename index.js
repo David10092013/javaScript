@@ -1,20 +1,23 @@
+import { ContaPoupanca } from './ContaPoupanca.js';
+import { Cliente } from './Cliente.js';
+import { ContaCorrente } from './ContaCorrente.js';
 
-import { contaPoupanca } from './ContaPoupanca.js';
-import { cliente } from './Cliente.js';
-import { ContaCorrente } from './Contacorrente.js';
+const clienteRicardo = new Cliente('Ricardo', 11122233309);
+const contaPoupancaDoRicardo = new ContaPoupanca(50, clienteRicardo, 1001);
+const contaCorrenteDoRicardo = new ContaCorrente(1001, clienteRicardo);
 
-const cliente1 = new cliente('Ricardo', 11122233309);
+console.log('---------------- antes')
+console.log('conta poupanca', JSON.stringify(contaPoupancaDoRicardo, null, 2))
+console.log('conta corrente', JSON.stringify(contaCorrenteDoRicardo, null, 2))
 
+// deposita 500
+contaCorrenteDoRicardo.depositar(500);
 
+// saca 100
+contaCorrenteDoRicardo.sacar(100);
 
-const ContaPoupanca = new contaPoupanca(50,cliente1,1001);
+console.log('---------------- depois')
+console.log('conta poupanca', JSON.stringify(contaPoupancaDoRicardo, null, 2))
+console.log('conta corrente', JSON.stringify(contaCorrenteDoRicardo, null, 2))
 
-const contaCorrenteRicardo = new ContaCorrente(1001, cliente1);
-contaCorrenteRicardo.depositar(500);
-contaCorrenteRicardo.sacar (100);
-
-const contaPoupanca = new ContaPoupanca(50, cliente1,1001);
-console.log(contaPoupanca);
-
-console.log(contaCorrenteRicardo);
 
