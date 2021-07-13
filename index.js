@@ -1,5 +1,5 @@
 
-import { contaPoupanca } from '../Contapoupanca.js';
+import { contaPoupanca } from './ContaPoupanca.js';
 import { cliente } from './Cliente.js';
 import { ContaCorrente } from './Contacorrente.js';
 
