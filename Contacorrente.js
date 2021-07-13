@@ -20,6 +20,16 @@ export class ContaCorrente {
 
   get saldo() {
     return this._saldo;
+  } 
+
+  set agencia(agencia){
+
+    agencia = agencia
+  }
+
+  set _saldo(_saldo){
+
+    _saldo = _saldo
   }
 
   constructor(agencia, cliente) {
