@@ -6,7 +6,7 @@ export class Cliente {
   }
 
   get nome() {
-    return this.nome;
+    return this._nome;
   }
 
   set cpf(_cpf) {
@@ -14,11 +14,11 @@ export class Cliente {
   }
 
   set nome(nome) {
-    nome = nome;
+    _nome = nome;
   }
 
   constructor(nome, cpf) {
-    this.nome = nome;
+    this._nome = nome;
     this._cpf = cpf;
   }
 
