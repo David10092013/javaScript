@@ -15,3 +15,4 @@ contaCorrenteDoRicardo.sacar(100);
 
 
 console.log(clienteRicardo.nome)
+console.log(contaPoupancaDoRicardo)

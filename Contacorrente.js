@@ -17,7 +17,7 @@ export class ContaCorrente {
   get agencia() {
     return this.agencia;
   }
-
+/*definir um saldo*/
   get saldo() {
     return this._saldo;
   }
@@ -27,8 +27,8 @@ export class ContaCorrente {
   }
 
 
-
-  set _saldo (_saldo){
+ /*pegar um resultado*/ 
+set _saldo (_saldo){
     _saldo = _saldo
   }
 
