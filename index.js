@@ -9,9 +9,14 @@ diretor.cadastrarSenha('123456');
 const gerente = new Gerente('Thay', 3000, 12345678901);
 gerente.cadastrarSenha('123');
 
-const estaLogado = SistemaAutenticacao.login(diretor, '123456');
 
-console.log(estaLogado);
+const cliente = new Cliente ("lais",78945612379,"456");
+
+const diretorEstaLogado = SistemaAutenticacao.login(diretor, '123456');
+const gerenteEstaLogado = SistemaAutenticacao.login(gerente, '123');
+const clienteEstaLogado = SistemaAutenticacao.login(cliente,"456");
+
+console.log(gerenteEstaLogado,diretorEstaLogado,clienteEstaLogado);
 
 
 /*import { ContaPoupanca } from './Conta/ContaPoupanca.js';
